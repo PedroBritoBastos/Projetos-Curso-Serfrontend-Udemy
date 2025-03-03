@@ -1,0 +1,62 @@
+/* section */
+.nossa-escola {
+   width: 100%;
+   height: 400px;
+   display: flex;
+   padding: 1em;
+   margin-top: 100px;
+   box-sizing: border-box;
+   background-color: rgb(36, 36, 110);
+}
+.nossa-escola .nossa-escola-img { /* container para ficar ao lado do conteudo */
+   width: 40%;
+   display: flex;
+   align-items: end;
+   display: none;
+}
+.nossa-escola .content {
+   color: white;
+}
+
+/* container de imagem */
+.img-container {
+   width: 90%;
+   height: 70%;
+}
+.img-container img { /* img */
+   width: 100%;
+   height: 100%;
+}
+
+/* conteúdo */
+.content .nossa-escola-title {
+   font-size: 20px;
+}
+.content p {
+   font-size: 16px;
+   margin-bottom: 0;
+}
+
+
+/* responsivo */
+/* telas pequenas */
+@media screen and (min-width: 481px) { 
+   .nossa-escola .nossa-escola-img {
+      display: flex;
+   }
+}
+
+/* telas medias */
+@media screen and (min-width: 769px) { 
+   .img-container {
+      height: 80%;
+   }
+}
+
+/* telas grandes */
+@media screen and (min-width: 1028px) { 
+   .img-container {
+      height: 90%;
+   }
+}
+
